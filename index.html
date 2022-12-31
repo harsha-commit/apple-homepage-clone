@@ -7,7 +7,102 @@
       crossorigin="anonymous"
     ></script>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/style.css" />
+    <style>
+      /* hello world :) */
+      * {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: black;
+        opacity: 80%;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        color: gray;
+      }
+
+      #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .banner {
+        margin-bottom: 15px;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer #apple-card,
+      #options {
+        width: 85%;
+      }
+
+      #options {
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-top: 2px solid gray;
+      }
+
+      .title {
+        font-weight: bold;
+        color: rgb(30, 30, 30);
+        padding-bottom: 5px;
+      }
+
+      #services-and-account {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #account {
+        margin-top: 10px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      #details {
+        width: 85%;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 2px solid gray;
+        padding-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
     <header id="header">
