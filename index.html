@@ -17,6 +17,10 @@
         font-size: small;
       }
 
+      body {
+        width: 100%;
+      }
+
       #header {
         display: flex;
         justify-content: space-between;
@@ -48,6 +52,7 @@
       #grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 30px;
       }
 
       .banner {
@@ -58,15 +63,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
       }
 
-      footer #apple-card,
-      #options {
+      footer {
         width: 85%;
       }
 
       #options {
         padding-top: 10px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -95,12 +101,16 @@
         width: 100%;
       }
 
+      img {
+        width: 100%;
+      }
+
       #details {
-        width: 85%;
+        width: 100%;
         margin-top: 10px;
         padding-top: 10px;
         border-top: 2px solid gray;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
       }
     </style>
   </head>
@@ -130,7 +140,7 @@
       <div class="banner"><img src="3.png" /></div>
 
       <!-- Grid Section -->
-      <div id="grid">
+      <div id="grid" style="width: inherit">
         <div class="product"><img src="4.png" /></div>
         <div class="product"><img src="5.png" /></div>
         <div class="product"><img src="6.png" /></div>
