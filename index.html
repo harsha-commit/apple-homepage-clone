@@ -10,21 +10,18 @@
     <style>
       /* hello world :) */
       * {
-        margin: 0;
+        margin: auto;
         padding: 0px;
         box-sizing: border-box;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: small;
-      }
-
-      body {
-        width: 100%;
+        width: 90%;
       }
 
       #header {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: inherit;
         background-color: black;
         opacity: 80%;
       }
@@ -49,32 +46,35 @@
         color: gray;
       }
 
-      #grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      #flex {
+        display: flex;
+        width: 90%;
+        border: 2px solid black;
         /* padding: 30px; */
       }
 
       .banner {
         margin-bottom: 15px;
+        overflow: hidden;
+        background-size: cover;
       }
 
       footer {
         display: flex;
+        margin-top: 20px;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
       }
 
       footer {
-        width: 85%;
+        width: 90%;
+        border: 2px solid black;
       }
 
       #options {
         padding-top: 10px;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         border-top: 2px solid gray;
       }
@@ -98,12 +98,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: inherit;
+        border: 2px solid black;
       }
 
-      img {
-        width: 100%;
-      }
+  
 
       #details {
         width: 100%;
@@ -111,6 +110,10 @@
         padding-top: 10px;
         border-top: 2px solid gray;
         padding-bottom: 25px;
+      }
+
+      .product{
+        justify-items: stretch;
       }
     </style>
   </head>
@@ -135,19 +138,17 @@
     </header>
 
     <section>
-      <div class="banner"><img src="1.png" /></div>
-      <div class="banner"><img src="2.png" /></div>
-      <div class="banner"><img src="3.png" /></div>
+      <div class="banner"><img src="images/1.png"  /></div>
+      <div class="banner"><img src="images/2.png"  /></div>
+      <div class="banner"><img src="images/3.png" /></div>
 
       <!-- Grid Section -->
-      <div id="grid" style="width: inherit">
-        <div class="product"><img src="4.png" /></div>
-        <div class="product"><img src="5.png" /></div>
-        <div class="product"><img src="6.png" /></div>
-        <div class="product"><img src="7.png" /></div>
+      <div id="flex">
+        <div class="product"><img src="images/4.png"/></div>
+        <div class="product"><img src="images/5.png" /></div>
+        <div class="product"><img src="images/6.png" /></div>
+        <div class="product"><img src="images/7.png"/></div>
       </div>
-
-      <div class="banner"><img src="9.png" /></div>
 
       <footer>
         <div id="apple-card">
@@ -261,7 +262,7 @@
           <p>
             Copyright © 2022 Apple Inc. All rights reserved. | Privacy Policy |
             Terms of Use | Sales and Refunds | Legal | Site Map
-            <span style="margin-left: 230px">United States</span>
+            <p>United States</p>
           </p>
         </div>
       </footer>
